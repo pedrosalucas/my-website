@@ -1,5 +1,11 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
+import Hello from '../components/Hello';
+import Resume from '../components/Resume';
+import Experience from '../components/Experience';
+import Knowledge from '../components/Knowledge';
+import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -13,30 +19,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
       </Head>
-
-      <header className={styles.header}>
-        <h2>Good Mornig ⛅</h2>
-        <nav>
-          <label className={styles.switch}>
-            <input type="checkbox" />
-            <span className={styles.slider}></span>
-          </label>
-        </nav>
-      </header>
     
       <main className={styles.main}>
-        <div className={styles.resume}>
-          <h1>About</h1>
-        </div>
-        <div className={styles.experience}>
-          <h1>Experience</h1>
-        </div>
-        <div className={styles.sidebar}></div>
+        <Hello  className={styles.hello} />
+
+        <Resume className={styles.resume} />
+
+        <Experience className={styles.experience} />
+
+        <Knowledge  className={styles.knowledge} />
+
+        <Sidebar className={styles.sidebar} />
       </main>
 
-      <footer className={styles.footer}>
-        <h4>Footer Text</h4>
-      </footer>
+      <Footer className={styles.footer}/>
     </div>
   )
 }
