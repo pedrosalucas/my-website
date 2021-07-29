@@ -1,15 +1,13 @@
 import React from 'react';
-import styles from './index.module.scss';
+import ToogleTheme from '../ToggleTheme';
 
 
 function Sidebar(props) {
     return (
         <div {...props}>
           <nav>
-            <label className={styles.switch}>
-              <input type="checkbox" />
-              <span className={styles.slider}></span>
-            </label>
+
+            <ToogleTheme />
           </nav>
         </div>
     );

@@ -1,4 +1,13 @@
-$bg-primary: #1d1d1d;
+.light {
+  --bg-primary: #fbfbfe;
+  --bg-secondary: #f1f1f1;
+  --font-color: #000;
+}
+.dark {
+  --bg-primary: rgb(41, 41, 41);
+  --bg-secondary: #243133;
+  --font-color: #fff;
+}
 
 .fullPage {
   min-height: 100vh;
@@ -6,6 +15,15 @@ $bg-primary: #1d1d1d;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  
+  .theme-dark & {
+    color: #fff;
+    background-color: rgb(41, 41, 41);
+  }
+  .theme-light & {
+    color: #000;
+    background-color: #fbfbfe;
+  }
 }
 
 .footer {
