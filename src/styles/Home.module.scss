@@ -11,7 +11,6 @@
 
 .fullPage {
   min-height: 100vh;
-  padding: 0 max(1.5em, 4vw);
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -36,31 +35,22 @@
 }
 
 .main {
+  padding: 0 max(1.5em, 4vw);
   display: grid;
-  grid: "hello sidebar"
-        "resume sidebar"
-        "experience sidebar"
-        "knowledge knowledge"
-        / 2fr 1fr;
-
-  .hello {
-    grid-area: hello;
+  grid: "about sidebar"
+  "knowledge knowledge"
+  / 2fr 1fr;
+  
+  .about {
+    grid-area: about;
   }
-
-  .resume {
-    grid-area: resume;
-  }
-
-  .experience {
-    grid-area: experience;
-  }
-
+  
   .knowledge {
     grid-area: knowledge;
     display: flex;
     justify-content: center;
   }
-
+  
   .sidebar {
     grid-area: sidebar;
     background-color: #ccc;

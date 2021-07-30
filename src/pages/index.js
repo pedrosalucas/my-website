@@ -21,11 +21,13 @@ export default function Home() {
       </Head>
     
       <main className={styles.main}>
-        <Hello  className={styles.hello} />
+        <div>
+          <Hello  className={styles.hello} />
 
-        <Resume className={styles.resume} />
+          <Resume className={styles.resume} />
 
-        <Experience className={styles.experience} />
+          <Experience className={styles.experience} />
+        </div>
 
         <Knowledge  className={styles.knowledge} />
 

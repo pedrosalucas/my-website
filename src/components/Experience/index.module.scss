@@ -1,0 +1,21 @@
+.companyItem {
+    display: grid;
+    align-items: center;
+    grid: "img description"
+          / 80px 1fr;
+  
+    .companyImg {
+        grid-area: img;
+    }
+
+    .companyDescription {
+        grid-area: description;
+        h3, ul {
+            margin: 5px 0 8px;
+        }
+    }
+}
+
+.companyLogo {
+    border-radius: 3px;
+}
