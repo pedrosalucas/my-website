@@ -1,0 +1,23 @@
+{
+    "resume": "I'm Lucas Pedrosa, have 20 old, Brazilian, and I study at the Federal University of Sergipe. I enjoy a fun work environment, as long as everyone is respected, and I'm addicted to challenges believe this motivates me to go further.",
+    "experiences": {
+        "title" : "Experiences",
+        "softeam": {
+            "title": "SofTeam",
+            "imgPath": "../../assets/images/softeam.jpg",
+            "descriptions": {
+                "first": "I worked developing websites using WordPress.",
+                "second": "There I developed soft skills such as being proactive and knowledge trade with coworkers."
+            }
+        },
+        "crably": {
+            "title": "Crably",
+            "imgPath": "../../assets/images/softeam.jpg",
+            "descriptions": {
+                "first": "I develop websites with Liquid Template, a Shopify's Framework, and do customer support.",
+                "second": "I have increased my communication skills by doing support in English and Portuguese."
+            }
+        }
+    },
+    "knowledge": "Skill / Projects"
+}

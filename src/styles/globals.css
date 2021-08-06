@@ -28,3 +28,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.contentText {
+  padding: 0 max(10px, 2vw);
+}

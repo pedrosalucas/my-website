@@ -1,18 +1,27 @@
+import React from 'react';
 import Image from 'next/image';
 import styles from './index.module.scss';
 import SofteamLogo from '../../assets/images/softeam.jpg';
+import { LangContext } from '../../providers/LangPreference';
 
 function Experience(props) {
-    return (
-        <div {...props}>
-          <h2>Experience</h2>
+  const { messages } = React.useContext(LangContext);
+  
+  return (
+      <div {...props}>
+        <h2>{ messages.experiences.title }</h2>
+
+        <div className="contentText">
+
           <div className={styles.companyItem}>
             <div className={styles.companyImg}>
               <Image src={SofteamLogo} placeholder="blur" className={styles.companyLogo} alt="SofTeam Logo" />
             </div>
             
-            <div className={styles.companyDescription}>
+            <div className={styles.companyTitle}>
               <h3>SofTeam</h3>
+            </div>
+            <div className={styles.companyDescription}>
               <ul>
                 <li>
                   I worked developing websites using WordPress.
@@ -24,7 +33,8 @@ function Experience(props) {
             </div>
           </div>
         </div>
-    );
+      </div>
+  );
 }
 
 export default Experience;

@@ -1,11 +1,14 @@
 import React from 'react';
+import { LangContext } from '../../providers/LangPreference';
 
 function Knowledge(props) {
-    return (
-        <div {...props}>
-          <h1>Skills / Projects</h1>
-        </div>
-    );
+  const { messages } = React.useContext(LangContext);
+
+  return (
+      <div {...props}>
+        <h1>{ messages.knowledge }</h1>
+      </div>
+  );
 }
 
 export default Knowledge;

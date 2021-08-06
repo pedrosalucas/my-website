@@ -1,15 +1,17 @@
 import React from 'react';
-import ToogleTheme from '../ToggleTheme';
+import ToggleLang from '../ToggleLang';
+import ToggleTheme from '../ToggleTheme';
 
 
 function Sidebar(props) {
     return (
-        <div {...props}>
-          <nav>
+      <div {...props}>
+        <nav>
+          <ToggleTheme />
 
-            <ToogleTheme />
-          </nav>
-        </div>
+          <ToggleLang />
+        </nav>
+      </div>
     );
 }
 

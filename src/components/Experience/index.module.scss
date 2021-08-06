@@ -1,18 +1,30 @@
+$mobile: 425px;
+
 .companyItem {
     display: grid;
     align-items: center;
-    grid: "img description"
+    grid: "img title"
+          "img description"
           / 80px 1fr;
   
     .companyImg {
         grid-area: img;
     }
 
+    .companyTitle {
+        grid-area: title;
+    }
     .companyDescription {
         grid-area: description;
         h3, ul {
             margin: 5px 0 8px;
         }
+    }
+
+    @media screen and (max-width: $mobile) {
+        grid: "img title"
+            "description description"
+            / 80px 1fr;
     }
 }
 

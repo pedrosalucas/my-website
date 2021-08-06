@@ -1,12 +1,14 @@
 import React from 'react';
+import { LangContext } from '../../providers/LangPreference';
+
 
 function Resume(props) {
+    const { messages } = React.useContext(LangContext);
+
     return (
         <div {...props}>
-          <h4>
-            I&apos;m Lucas Pedrosa, have 20 old, Brazilian, and I study at the Federal University of Sergipe.
-            I appreciate a fun work environment, as long as everyone is respected,
-            and I like challenges, believe that motivates me to do more.
+            <h4 className="contentText">
+                { messages.resume }
             </h4>
         </div>
     );

@@ -1,37 +1,35 @@
 import React from 'react';
+import { ThemeContext } from '../../providers/ThemePreference';
 import styles from './index.module.scss';
 
-function setTheme(themeName) {
-    localStorage.setItem('theme', themeName);
-    document.getElementsByTagName("BODY")[0].className = themeName;
-}
 
-function ToogleTheme() {
-    React.useEffect(() => {
-        const storageTheme = localStorage.getItem('theme');
-        console.log(storageTheme);
-        if (!storageTheme || storageTheme === 'theme-dark') {
-            setTheme('theme-dark');
-        } else if (storageTheme === 'theme-light') {
-            setTheme('theme-light');
-        }
-    });
+function ToggleTheme() {
+    const { currentTheme, setCurrentTheme } = React.useContext(ThemeContext);
 
     const toggleClick = () => {
-        const storageTheme = localStorage.getItem('theme');
-        if (storageTheme === 'theme-dark') {
-            setTheme('theme-light');
-        } else if (storageTheme === 'theme-light') {
-            setTheme('theme-dark');
+        if (currentTheme === 'theme-dark') {
+            setCurrentTheme('theme-light');
+        } else if (currentTheme === 'theme-light') {
+            setCurrentTheme('theme-dark');
         }
     }
 
+    const toggle = React.useRef();
+    React.useEffect(() => {
+        if (currentTheme === 'theme-dark') {
+            toggle.current.checked = true;
+        }
+        else if (currentTheme === 'theme-light') {
+            toggle.current.checked = false;
+        }
+    }, [currentTheme]);
+
     return (
         <label className={styles.switch}>
-            <input type="checkbox" onClick={toggleClick} defaultChecked />
+            <input ref={toggle} type="checkbox" onClick={toggleClick} />
             <span className={styles.slider}></span>
         </label>
     );
 }
 
-export default ToogleTheme;
+export default ToggleTheme;

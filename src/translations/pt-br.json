@@ -1,0 +1,23 @@
+{
+    "resume": "Sou Lucas Pedrosa, tenho 20 anos, brasileiro, e estudo na Universidade Federal de Sergipe. Gosto de um ambiente de trabalho divertido, desde que todos sejam respeitados, e sou viciado em desafios, acredito que isso me motiva a ir além.",
+    "experiences": {
+        "title" : "Experiências",
+        "softeam": {
+            "title": "SofTeam",
+            "imgPath": "../../assets/images/softeam.jpg",
+            "descriptions": {
+                "first": "Trabalhei desenvolvendo sites em WordPress.",
+                "second": "Lá desenvolvi habilidades pessoais, como ser proativo e trocar conhecimento com os colegas de trabalho."
+            }
+        },
+        "crably": {
+            "title": "Crably",
+            "imgPath": "../../assets/images/softeam.jpg",
+            "descriptions": {
+                "first": "I develop websites with Liquid Template, a Shopify's Framework, and do customer support.",
+                "second": "I have increased my communication skills by doing support in English and Portuguese."
+            }
+        }
+    },
+    "knowledge": "Habilidade / Projetos"
+}
