@@ -3,7 +3,7 @@
     "experiences": {
         "title" : "Experiências",
         "softeam": {
-            "title": "SofTeam",
+            "companyName": "SofTeam",
             "imgPath": "../../assets/images/softeam.jpg",
             "descriptions": {
                 "first": "Trabalhei desenvolvendo sites em WordPress.",
@@ -11,11 +11,11 @@
             }
         },
         "crably": {
-            "title": "Crably",
+            "companyName": "Crably",
             "imgPath": "../../assets/images/softeam.jpg",
             "descriptions": {
-                "first": "I develop websites with Liquid Template, a Shopify's Framework, and do customer support.",
-                "second": "I have increased my communication skills by doing support in English and Portuguese."
+                "first": "Eu desenvolvo sites com Liquid Template, um Framework da Shopify, e faço suporte ao cliente.",
+                "second": "Aumentei minhas habilidades de comunicação fazendo suporte em inglês e português."
             }
         }
     },

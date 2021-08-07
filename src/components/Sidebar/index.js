@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './index.module.scss'; 
 import ToggleLang from '../ToggleLang';
 import ToggleTheme from '../ToggleTheme';
 
@@ -6,7 +7,7 @@ import ToggleTheme from '../ToggleTheme';
 function Sidebar(props) {
     return (
       <div {...props}>
-        <nav>
+        <nav className={styles.nav}>
           <ToggleTheme />
 
           <ToggleLang />

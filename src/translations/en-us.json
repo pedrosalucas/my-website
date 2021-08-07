@@ -3,16 +3,14 @@
     "experiences": {
         "title" : "Experiences",
         "softeam": {
-            "title": "SofTeam",
-            "imgPath": "../../assets/images/softeam.jpg",
+            "companyName": "SofTeam",
             "descriptions": {
                 "first": "I worked developing websites using WordPress.",
                 "second": "There I developed soft skills such as being proactive and knowledge trade with coworkers."
             }
         },
         "crably": {
-            "title": "Crably",
-            "imgPath": "../../assets/images/softeam.jpg",
+            "companyName": "Crably",
             "descriptions": {
                 "first": "I develop websites with Liquid Template, a Shopify's Framework, and do customer support.",
                 "second": "I have increased my communication skills by doing support in English and Portuguese."

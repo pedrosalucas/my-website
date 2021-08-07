@@ -1,11 +1,21 @@
-$tablet: 1024px;
-$mobile: 425px;
+@use './variables' as *;
 
 .fullPage {
   min-height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  transition: all 1s linear 200ms;
+
+  body[class~=theme-dark] & {
+    background-color: $bg-dark-primary;
+    color: $font-dark-color;
+  }
+
+  body[class~=theme-light] & {
+    background-color: $bg-light-primary;
+    color: $font-light-color;
+  }
 }
 
 .main {
@@ -28,9 +38,18 @@ $mobile: 425px;
   
   .sidebar {
     grid-area: sidebar;
-    background-color: #ccc;
-  }
+    border-radius: 10px;
+    
+    body[class~=theme-dark] & {
+      background-color: $bg-dark-secondary;
+    }
 
+    body[class~=theme-light] & {
+      background-color: $bg-light-secondary;
+    }
+
+  }
+  
   @media screen and (max-width: $tablet) {
     padding: 12px 5vw 0;
   }

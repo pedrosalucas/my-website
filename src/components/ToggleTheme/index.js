@@ -25,10 +25,13 @@ function ToggleTheme() {
     }, [currentTheme]);
 
     return (
-        <label className={styles.switch}>
-            <input ref={toggle} type="checkbox" onClick={toggleClick} />
-            <span className={styles.slider}></span>
-        </label>
+        <div>
+            <h5>Theme:</h5>
+            <label className={styles.switch}>
+                <input ref={toggle} type="checkbox" onClick={toggleClick} />
+                <span className={styles.slider}></span>
+            </label>
+        </div>
     );
 }
 
