@@ -14,23 +14,31 @@ function ToggleLang() {
         }
     }
 
-    const toggle = React.useRef();
-    React.useEffect(() => {
-        if (messagesLang === 'en-us') {
-            toggle.current.checked = true;
-        }
-        else if (messagesLang === 'pt-br') {
-            toggle.current.checked = false;
-        }
-    }, [messagesLang]);
-
     return (
         <div>
             <h5>Language:</h5>
-            <label className={styles.switch}> 
-                <input ref={toggle} type="checkbox" onClick={toggleClick} />
-                <span className={styles.slider}></span>
-            </label>
+            <div className={styles.toggleContainer}>
+                <label className={styles.switch}> 
+                    <input type="checkbox" onClick={toggleClick} />
+
+                    <div className={styles.names}>
+                        <p 
+                            style={ messagesLang === 'pt-br' ? {opacity: 1} : {opacity: .5}}
+                        >
+                            PT ⚽
+                        </p>
+                        <p 
+                            style={ messagesLang === 'en-us' ? {opacity: 1} : {opacity: .5}}
+                        >
+                            EN 🏈
+                        </p>
+                    </div>
+
+                    <spam id={styles.mark}
+                        className={ messagesLang === 'en-us' ? styles.markRight : styles.markLeft}
+                    ></spam>
+                </label>
+            </div>
         </div>
     );
 }

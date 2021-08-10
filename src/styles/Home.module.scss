@@ -39,6 +39,9 @@
   .sidebar {
     grid-area: sidebar;
     border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
     
     body[class~=theme-dark] & {
       background-color: $bg-dark-secondary;

@@ -1,8 +1,17 @@
 .nav {
+    margin: min(25px, 2vw) 0;
     display: flex;
+    flex-flow: column;
     justify-content: space-around;
     
     div {
         text-align: center;
     }
+}
+
+.socialButtons {
+    margin: min(40px, 3vw) 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
 }
