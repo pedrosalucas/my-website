@@ -14,23 +14,31 @@ function ToggleTheme() {
         }
     }
 
-    const toggle = React.useRef();
-    React.useEffect(() => {
-        if (currentTheme === 'theme-dark') {
-            toggle.current.checked = true;
-        }
-        else if (currentTheme === 'theme-light') {
-            toggle.current.checked = false;
-        }
-    }, [currentTheme]);
-
     return (
         <div>
             <h5>Theme:</h5>
-            <label className={styles.switch}>
-                <input ref={toggle} type="checkbox" onClick={toggleClick} />
-                <span className={styles.slider}></span>
-            </label>
+            <div className={styles.toggleContainer}>
+                <label className={styles.switch}> 
+                    <input type="checkbox" onClick={toggleClick} />
+
+                    <div className={styles.names}>
+                        <p 
+                            style={ currentTheme === 'theme-light' ? {opacity: 1} : {opacity: .5}}
+                        >
+                            Light { currentTheme === 'theme-light' ? '☀️' : '🌤️'}
+                        </p>
+                        <p 
+                            style={ currentTheme === 'theme-dark' ? {opacity: 1} : {opacity: .5}}
+                        >
+                            Dark { currentTheme === 'theme-dark' ? '🌕' : '🌑' }
+                        </p>
+                    </div>
+
+                    <spam id={styles.mark}
+                        className={ currentTheme === 'theme-dark' ? styles.markRight : styles.markLeft}
+                    ></spam>
+                </label>
+            </div>
         </div>
     );
 }

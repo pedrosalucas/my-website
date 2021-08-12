@@ -4,7 +4,6 @@
         "title" : "Experiências",
         "softeam": {
             "companyName": "SofTeam",
-            "imgPath": "../../assets/images/softeam.jpg",
             "descriptions": {
                 "first": "Trabalhei desenvolvendo sites em WordPress.",
                 "second": "Lá desenvolvi habilidades pessoais, como ser proativo e trocar conhecimento com os colegas de trabalho."
@@ -12,12 +11,20 @@
         },
         "crably": {
             "companyName": "Crably",
-            "imgPath": "../../assets/images/softeam.jpg",
             "descriptions": {
                 "first": "Eu desenvolvo sites com Liquid Template, um Framework da Shopify, e faço suporte ao cliente.",
                 "second": "Aumentei minhas habilidades de comunicação fazendo suporte em inglês e português."
             }
         }
     },
-    "knowledge": "Habilidade / Projetos"
+    "projects": {
+        "title": "Projetos",
+        "list": [
+            {
+                "title": "Telegram Bot ➕ Discord Bot"
+            }, {
+                "title": "Meu Website"
+            }
+        ]
+    }
 }

@@ -7,15 +7,8 @@
   justify-content: space-between;
   transition: all 1s linear 200ms;
 
-  body[class~=theme-dark] & {
-    background-color: $bg-dark-primary;
-    color: $font-dark-color;
-  }
-
-  body[class~=theme-light] & {
-    background-color: $bg-light-primary;
-    color: $font-light-color;
-  }
+  @include font-colors();
+  @include bg-colors(primary);
 }
 
 .main {
@@ -32,25 +25,19 @@
   
   .knowledge {
     grid-area: knowledge;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: min(65px, 15vh) 0;
   }
   
   .sidebar {
     grid-area: sidebar;
-    border-radius: 10px;
+    border-radius: $border-radius-box;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     
-    body[class~=theme-dark] & {
-      background-color: $bg-dark-secondary;
-    }
-
-    body[class~=theme-light] & {
-      background-color: $bg-light-secondary;
-    }
-
+    @include bg-colors(secundary);
+    @include box-shadow-colors();
   }
   
   @media screen and (max-width: $tablet) {

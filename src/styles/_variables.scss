@@ -1,14 +1,65 @@
 $tablet: 1024px;
 $mobile: 425px;
 
+$border-radius-box: 10px;
+$border-radius-button: 12px;
 
 $bg-dark-primary: rgb(41, 41, 41);
-$bg-dark-secondary: rgb(145 145 145);
-$bg-dark-third: rgb(73, 73, 73);
+$bg-dark-secondary: rgb(73, 73, 73);
+$bg-dark-third: rgba(160, 160, 160, .6);
+$shadow-dark-color: rgba(165, 165, 165, .15);
 $font-dark-color: #fff;
 
-
 $bg-light-primary: #fbfbfe;
-$bg-light-secondary: rgb(223 223 223);
-$bg-light-third: #f6f6f6;
+$bg-light-secondary: rgb(223 223 225);
+$bg-light-third: #f2f2f2;
+$shadow-light-color: rgba(0, 0, 0, .15);
 $font-light-color: #000;
+
+@mixin font-colors() {
+    body[class~=theme-dark] & {
+        color: $font-dark-color;
+    }
+
+    body[class~=theme-light] & {
+        color: $font-light-color;
+    }
+}
+
+@mixin box-shadow-colors() {
+    body[class~=theme-dark] & {
+        box-shadow: 0px 2px 8px 0px $shadow-dark-color;
+    }
+
+    body[class~=theme-light] & {
+        box-shadow: 0px 2px 8px 0px $shadow-light-color;
+    }
+}
+
+@mixin bg-colors($param) {
+    @if $param == primary {
+        body[class~=theme-dark] & {
+            background-color: $bg-dark-primary;
+        }
+    
+        body[class~=theme-light] & {
+            background-color: $bg-light-primary;
+        }
+    } @else if $param == secundary {
+        body[class~=theme-dark] & {
+            background-color: $bg-dark-secondary;
+        }
+    
+        body[class~=theme-light] & {
+            background-color: $bg-light-secondary;
+        }
+    } @else if $param == third {
+        body[class~=theme-dark] & {
+            background-color: $bg-dark-third;
+        }
+    
+        body[class~=theme-light] & {
+            background-color: $bg-light-third;
+        }
+    }
+}

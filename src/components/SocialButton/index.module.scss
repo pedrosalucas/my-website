@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .button {
     color: #fff;
     text-decoration: none;
@@ -5,9 +7,10 @@
     width: min(140px, 12vw);
     min-width: fit-content;
     margin: 6px 3px;
-    border-radius: 12px;
-    padding: 10px 10px;
+    border-radius: $border-radius-button;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    @include box-shadow-colors();
 }

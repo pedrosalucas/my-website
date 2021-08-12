@@ -1,3 +1,6 @@
+@use '../../styles/variables' as *;
+
+
 .toggleContainer {
     display: flex;
     align-items: center;
@@ -17,14 +20,14 @@
         transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         position: absolute;
         width: 50%;
-        background-color: rgb(73, 73, 73);
         box-shadow: 0 2px 15px rgba(0, 0, 0, .15);
         height: 2.8rem;
         border-radius: 100px;
+        @include bg-colors(third);
     }
 
     .markLeft {
-        transform: translateX(-85px);
+        transform: translateX(-100%);
     }
 
     [type="checkbox"] {
@@ -38,8 +41,8 @@
     display: flex;
     justify-content: space-between;
     width: 75%;
-    margin-top: -1%;
-    margin-left: 15%;
+    margin-top: -1.5%;
+    margin-left: 14%;
     font-size: 90%;
     font-weight: bolder;
     user-select: none;

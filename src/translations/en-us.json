@@ -17,5 +17,14 @@
             }
         }
     },
-    "knowledge": "Skill / Projects"
+    "projects": {
+        "title": "Projects",
+        "list": [
+            {
+                "title": "Telegram Bot ➕ Discord Bot"
+            }, {
+                "title": "My Website"
+            }
+        ]
+    }
 }

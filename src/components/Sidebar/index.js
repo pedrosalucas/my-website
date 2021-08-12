@@ -17,28 +17,28 @@ function Sidebar(props) {
         <div className={styles.socialButtons}>
           <SocialButton
             href="https://www.instagram.com/pedrosa_lucas/"
-            bgColor="#9d5dac"
+            bgcolor="#9d5dac"
           >
             <FaInstagram /> Instagram
           </SocialButton>
 
           <SocialButton
             href="https://www.linkedin.com/in/lucas-pedrosa-vieira-lima/"
-            bgColor="#0a66c2"
+            bgcolor="#0a66c2"
           >
             <FaLinkedinIn /> LinkedIn
           </SocialButton>
 
           <SocialButton
             href="https://github.com/pedrosalucas"
-            bgColor="#161b22"
+            bgcolor="#161b22"
           >
             <FaGithub /> Github
           </SocialButton>
 
           <SocialButton
             href="https://discordapp.com/users/xalabum#7443/"
-            bgColor="#5865f2"
+            bgcolor="#5865f2"
           >
             <FaDiscord /> Discord
           </SocialButton>

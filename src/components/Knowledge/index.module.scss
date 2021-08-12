@@ -1,0 +1,39 @@
+@use '../../styles/variables' as *;
+
+
+.names {
+    display: flex;
+    z-index: 1;
+    width: fit-content;
+    margin-left: 15px;
+    font-size: 90%;
+    font-weight: bolder;
+    
+    button {
+        @include bg-colors(third);
+        @include font-colors();
+        @include box-shadow-colors();
+        width: min(180px, 15vw);
+        margin: 0 15px 10px;
+        border: none;
+        border-radius: $border-radius-box;
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        
+        &[class='active'] {
+            @include bg-colors(secundary);
+            margin-bottom: 0;
+            border-end-start-radius: 0;
+            border-end-end-radius: 0;
+            box-shadow: none !important;
+        }
+    }
+}
+
+#projectContent {
+    @include box-shadow-colors();
+    @include bg-colors(secundary);
+    border-radius: $border-radius-box;
+    padding: min(20px, 3vw);
+}
