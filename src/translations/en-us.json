@@ -1,4 +1,9 @@
 {
+    "hello": {
+        "morning": "Good Morning",
+        "afternoon": "Good Afternoon",
+        "evening": "Good Evening"
+    },
     "resume": "I'm Lucas Pedrosa, have 20 old, Brazilian, and I study at the Federal University of Sergipe. I enjoy a fun work environment, as long as everyone is respected, and I'm addicted to challenges believe this motivates me to go further.",
     "experiences": {
         "title" : "Experiences",

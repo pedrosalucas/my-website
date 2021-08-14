@@ -7,6 +7,7 @@ import Knowledge from '../components/Knowledge';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import React from 'react';
+import TopGradient from '../components/TopGradient';
 
 
 export default function Home() {
@@ -21,17 +22,25 @@ export default function Home() {
       </Head>
     
       <main className={styles.main}>
-        <div>
-          <Hello  className={styles.hello} />
+        <TopGradient />
+        
+        <section className={styles.aboutMe}>
+          <div className={styles.aboutContent}>
+            <Hello  className={styles.hello} />
 
-          <Resume className={styles.resume} />
+            <Resume className={styles.resume} />
 
-          <Experience className={styles.experience} />
-        </div>
-
-        <Knowledge  className={styles.knowledge} />
+            <Experience className={styles.experience} />
+          </div>
 
         <Sidebar className={styles.sidebar} />
+        </section>
+
+
+        <section className={styles.projectsSection}>
+          <Knowledge />
+        </section>
+
       </main>
 
       <Footer className={styles.footer}/>

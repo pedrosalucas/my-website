@@ -6,7 +6,6 @@ function Knowledge(props) {
   const { messages } = React.useContext(LangContext);
   const [currentProjectIndex, setCurrentProjectIndex] = React.useState(0);
   React.useEffect(() => {
-    console.log(currentProjectIndex);
     document.getElementById(`${currentProjectIndex}project`).className = 'active';
   }, [currentProjectIndex]);
 

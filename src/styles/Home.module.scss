@@ -12,25 +12,32 @@
 }
 
 .main {
-  padding: 12px 12vw 0;
+  section {
+    padding: 12px 12vw 0;
+    
+    @media screen and (max-width: $tablet) {
+      padding: 12px 5vw 0;
+    }
+  
+    @media screen and (max-width: $mobile) {
+      padding: 10px 12px 0;
+    }
+  }
+}
+
+.aboutMe {
   display: grid;
   grid: "about sidebar"
-  "knowledge knowledge"
   / 2fr 1fr;
   justify-content: center;
   
-  .about {
+  .aboutContent {
     grid-area: about;
-  }
-  
-  .knowledge {
-    grid-area: knowledge;
-    text-align: center;
-    margin: min(65px, 15vh) 0;
   }
   
   .sidebar {
     grid-area: sidebar;
+    margin-top: 8px;
     border-radius: $border-radius-box;
     display: flex;
     flex-flow: column;
@@ -39,14 +46,11 @@
     @include bg-colors(secundary);
     @include box-shadow-colors();
   }
-  
-  @media screen and (max-width: $tablet) {
-    padding: 12px 5vw 0;
-  }
+}
 
-  @media screen and (max-width: $mobile) {
-    padding: 10px 12px 0;
-  }
+.projectsSection {
+  text-align: center;
+  margin: min(65px, 15vh) 0;
 }
 
 .footer {
