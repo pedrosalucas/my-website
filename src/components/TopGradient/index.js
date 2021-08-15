@@ -4,7 +4,6 @@ import styles from './index.module.scss';
 
 function TopGradient() {
     const { userHours } = React.useContext(TimeZoneContext);
-    console.log(userHours);
 
     let userTime;
     if (userHours >= 4 && userHours < 12) {

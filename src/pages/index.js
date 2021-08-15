@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss';
 import Hello from '../components/Hello';
 import Resume from '../components/Resume';
 import Experience from '../components/Experience';
-import Knowledge from '../components/Knowledge';
+import ProjectsSection from '../components/ProjectsSection';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import React from 'react';
@@ -37,9 +37,7 @@ export default function Home() {
         </section>
 
 
-        <section className={styles.projectsSection}>
-          <Knowledge />
-        </section>
+        <ProjectsSection className={styles.projectsSection} />
 
       </main>
 

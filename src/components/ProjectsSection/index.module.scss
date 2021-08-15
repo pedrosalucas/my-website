@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+
+
+.projectItem {
+    @include box-shadow-colors();
+    @include bg-colors(secundary);
+    width: 100%;
+    margin: min(25px, 6vh) 0;
+    border-radius: $border-radius-box;
+    padding: min(20px, 3vw);
+    display: flex;
+
+    h4 {
+        margin: 0;
+    }
+
+    .projectText {
+        width: 50%;
+    }
+
+    .projectImage {
+        width: 50%;
+        height: auto;
+    }
+}

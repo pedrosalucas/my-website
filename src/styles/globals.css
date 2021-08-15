@@ -17,4 +17,5 @@ hr {
 
 .contentText {
   padding: 0 max(10px, 2vw);
+  text-align: left;
 }
