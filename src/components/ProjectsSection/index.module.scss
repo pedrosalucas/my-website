@@ -9,17 +9,47 @@
     border-radius: $border-radius-box;
     padding: min(20px, 3vw);
     display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
 
     h4 {
         margin: 0;
     }
-
-    .projectText {
-        width: 50%;
-    }
-
+    
     .projectImage {
-        width: 50%;
+        max-width: 50%;
         height: auto;
     }
+    
+    .projectText {
+        max-width: 50%;
+    }
+    
+    .projectTools {
+        
+        h3 {
+            margin-bottom: 5px;
+        }
+        
+        .tools {
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            width: fit-content;
+            margin: 0 max(10px, 2vw);
+            border-radius: $border-radius-box;
+            padding: 5px;
+            @include bg-colors(third);
+            
+            div {
+                margin-right: 5px !important;
+            }
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+
 }

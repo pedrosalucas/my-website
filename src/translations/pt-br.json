@@ -26,9 +26,11 @@
         "title": "Projetos",
         "list": [
             {
-                "title": "Telegram Bot ➕ Discord Bot"
+                "title": "Telegram Bot ➕ Discord Bot",
+                "status": "🚧 Desenvolvimento 🚧"
             }, {
-                "title": "Meu Website"
+                "title": "Meu Website",
+                "status": ""
             }
         ]
     }
