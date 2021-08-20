@@ -7,7 +7,7 @@ function ExpCompany({ textContent, logo }) {
         <div className="contentText">
           <div className={styles.companyItem}>
             <div className={styles.companyImg}>
-              <Image src={logo} placeholder="blur" className={styles.companyLogo} alt="SofTeam Logo" />
+              <Image src={logo} placeholder="blur" width="75px" height="75px" className={styles.companyLogo} alt="SofTeam Logo" />
             </div>
             
             <div className={styles.companyTitle}>

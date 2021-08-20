@@ -20,22 +20,21 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    
+
+      <div id="overlay-menu" className={styles.overlay}></div>
+
       <main className={styles.main}>
         <TopGradient />
         
-        <section className={styles.aboutMe}>
-          <div className={styles.aboutContent}>
-            <Hello  className={styles.hello} />
+        <section className={styles.about}>
+          <Hello  className={styles.hello} />
 
-            <Resume className={styles.resume} />
+          <Resume className={styles.resume} />
 
-            <Experience className={styles.experience} />
-          </div>
+          <Experience className={styles.experience} />
 
-        <Sidebar className={styles.sidebar} />
+          <Sidebar className={styles.sidebar} />
         </section>
-
 
         <ProjectsSection className={styles.projectsSection} />
 

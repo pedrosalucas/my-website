@@ -11,9 +11,15 @@
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+    align-items: center;
 
-    h4 {
+    h2 {
         margin: 0;
+        padding-left: 0;
+    }
+
+    p {
+        margin: .1em 0;
     }
     
     .projectImage {
@@ -51,5 +57,17 @@
             height: auto;
         }
     }
+    
+    @media screen and (max-width: $mobile) {
+        flex-flow: column-reverse;
 
+        .projectImage {
+            max-width: 100%;
+        }
+
+        .projectText {
+            max-width: 100%;
+            margin: .3em 0;
+        }
+    }
 }

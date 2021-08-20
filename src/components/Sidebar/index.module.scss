@@ -1,17 +1,30 @@
-.nav {
-    margin: min(25px, 2vw) 0;
+@use '../../styles/variables' as *;
+
+
+.sidebarContainer {
+    border-radius: $border-radius-box;
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+
+    @include bg-colors(secundary);
+    @include box-shadow-colors();
+
     div {
         text-align: center;
+
+        h4 {
+            margin: .4em 0 1em;
+        }
     }
 }
 
 .socialButtons {
-    margin: min(40px, 3vw) 0;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
+    margin: 1em 0;
+
+    div {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+    }
 }

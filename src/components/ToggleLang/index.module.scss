@@ -1,6 +1,10 @@
 @use '../../styles/variables' as *;
 
 
+.firstContainer {
+    margin: 1em 0;
+}
+
 .toggleContainer {
     display: flex;
     align-items: center;
@@ -9,6 +13,8 @@
 
 .switch {
     width: 50%;
+    min-width: 160px;
+    max-width: 200px;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 100px;
     position: relative;

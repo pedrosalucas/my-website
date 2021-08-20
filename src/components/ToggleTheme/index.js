@@ -15,8 +15,8 @@ function ToggleTheme() {
     }
 
     return (
-        <div>
-            <h5>Theme:</h5>
+        <div className={styles.firstContainer}>
+            <h4>Theme:</h4>
             <div className={styles.toggleContainer}>
                 <label className={styles.switch}> 
                     <input type="checkbox" onClick={toggleClick} />

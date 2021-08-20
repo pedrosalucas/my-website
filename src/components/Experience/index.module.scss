@@ -1,11 +1,12 @@
-$mobile: 425px;
+@use '../../styles/variables' as *;
 
 .companyItem {
     display: grid;
     align-items: center;
     grid: "img title"
           "img description"
-          / 80px 1fr;
+          / 1fr 5fr;
+    margin-top: 1em;
   
     .companyImg {
         grid-area: img;
@@ -13,10 +14,14 @@ $mobile: 425px;
 
     .companyTitle {
         grid-area: title;
+        h3 {
+            margin: 5px 0 8px .1em;
+            font-size: 20px;
+        }
     }
     .companyDescription {
         grid-area: description;
-        h3, ul {
+        ul {
             margin: 5px 0 8px;
         }
     }
@@ -25,6 +30,12 @@ $mobile: 425px;
         grid: "img title"
             "description description"
             / 80px 1fr;
+
+        .companyTitle {
+            h3 {
+                margin-left: .5em;
+            }
+        }
     }
 }
 

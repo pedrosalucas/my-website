@@ -1,5 +1,5 @@
 $tablet: 1024px;
-$mobile: 425px;
+$mobile: 625px;
 
 $border-radius-box: 10px;
 $border-radius-button: 12px;
@@ -23,6 +23,16 @@ $font-light-color: #000;
 
     body[class~=theme-light] & {
         color: $font-light-color;
+    }
+}
+
+@mixin border-colors() {
+    body[class~=theme-dark] & {
+        border-color: $font-dark-color;
+    }
+
+    body[class~=theme-light] & {
+        border-color: $font-light-color;
     }
 }
 
