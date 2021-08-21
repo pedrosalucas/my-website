@@ -27,7 +27,7 @@ export default function Home() {
         <meta property="og:image" content="https://lucaspedrosa.vercel.app/screenshot_index.jpg" />
         <meta property="og:url" content="https://lucaspedrosa.vercel.app/" />
         <meta name="twitter:image:alt" content="Printscreen of the website." />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_image" />
       </Head>
 
       <div id="overlay-menu" className={styles.overlay}></div>
