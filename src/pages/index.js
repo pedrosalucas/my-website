@@ -1,13 +1,13 @@
+import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
+import TopGradient from '../components/TopGradient';
 import Hello from '../components/Hello';
 import Resume from '../components/Resume';
 import Experience from '../components/Experience';
-import ProjectsSection from '../components/ProjectsSection';
 import Sidebar from '../components/Sidebar';
+import ProjectsSection from '../components/ProjectsSection';
 import Footer from '../components/Footer';
-import React from 'react';
-import TopGradient from '../components/TopGradient';
 
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
 
         <meta property="og:title" content="Lucas Pedrosa Projects" />
         <meta property="og:description" content="A website about me." />
-        <meta property="og:image" content="/printscreen_index.png" />
+        <meta property="og:image" content="https://lucaspedrosa.vercel.app/screenshot_index.jpg" />
         <meta property="og:url" content="https://lucaspedrosa.vercel.app/" />
         <meta name="twitter:image:alt" content="Printscreen of the website." />
         <meta name="twitter:card" content="summary" />
