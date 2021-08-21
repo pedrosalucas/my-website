@@ -8,7 +8,6 @@ import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import React from 'react';
 import TopGradient from '../components/TopGradient';
-import Printscreen from '../assets/images/printscreen_index.png';
 
 
 export default function Home() {
@@ -25,7 +24,7 @@ export default function Home() {
 
         <meta property="og:title" content="Lucas Pedrosa Projects" />
         <meta property="og:description" content="A website about me." />
-        <meta property="og:image" content="/assets/images/printscreen_index.png" />
+        <meta property="og:image" content="/printscreen_index.png" />
         <meta property="og:url" content="https://lucaspedrosa.vercel.app/" />
         <meta name="twitter:image:alt" content="Printscreen of the website." />
         <meta name="twitter:card" content="summary" />
