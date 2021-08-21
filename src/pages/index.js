@@ -25,7 +25,7 @@ export default function Home() {
 
         <meta property="og:title" content="Lucas Pedrosa Projects" />
         <meta property="og:description" content="A website about me." />
-        <meta property="og:image" content={Printscreen} />
+        <meta property="og:image" content="/assets/images/printscreen_index.png" />
         <meta property="og:url" content="https://lucaspedrosa.vercel.app/" />
         <meta name="twitter:image:alt" content="Printscreen of the website." />
         <meta name="twitter:card" content="summary" />
