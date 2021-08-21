@@ -22,12 +22,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/favicon.ico" />
 
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Lucas Pedrosa Projects" />
         <meta property="og:description" content="A website about me." />
         <meta property="og:image" content="https://lucaspedrosa.vercel.app/screenshot_index.jpg" />
         <meta property="og:url" content="https://lucaspedrosa.vercel.app/" />
         <meta name="twitter:image:alt" content="Printscreen of the website." />
-        <meta name="twitter:card" content="summary_image" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       <div id="overlay-menu" className={styles.overlay}></div>
