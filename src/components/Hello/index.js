@@ -11,7 +11,7 @@ function Hello(props) {
   let helloMessage;
   if (userHours >= 4 && userHours < 12) {
     helloMessage = messages.hello.morning;
-  } else if (userHours < 18) {
+  } else if (userHours >= 12 && userHours < 18) {
     helloMessage = messages.hello.afternoon;
   } else {
     helloMessage = messages.hello.evening;

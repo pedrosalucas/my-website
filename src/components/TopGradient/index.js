@@ -14,13 +14,13 @@ function TopGradient() {
         userTime = 'afternoon';
         console.log('afternoon');
     } else {
-        console.log('night');
         userTime = 'night';
+        console.log('night');
     }
     console.log('User Time: ' + userTime);
 
     return (
-        <span data-time={ userTime } className={styles.containerGradient}></span>
+        <span data-time={ userTime } className={`${styles.containerGradient} ${userTime}`}></span>
     );
 }
 
