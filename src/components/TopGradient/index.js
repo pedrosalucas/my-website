@@ -7,9 +7,9 @@ function TopGradient() {
     const [userTime, setUserTime] = React.useState(null);
  
     React.useEffect(() => {
-        if (userHours >= 4 && userHours <= 12) {
+        if (userHours >= 4 && userHours < 12) {
             setUserTime('morning');
-        } else if (userHours > 12 && userHours < 18) {
+        } else if (userHours >= 12 && userHours < 18) {
             setUserTime('afternoon');
         } else {
             setUserTime('night');
@@ -17,7 +17,7 @@ function TopGradient() {
     }, [userHours]);
 
     return (
-        <span data-time={ userTime } className={`${styles.containerGradient} ${userTime}`}></span>
+        <span data-time={ userTime } className={styles.containerGradient}></span>
     );
 }
 
