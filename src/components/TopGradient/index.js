@@ -4,22 +4,17 @@ import styles from './index.module.scss';
 
 function TopGradient() {
     const { userHours } = React.useContext(TimeZoneContext);
-
-    let userTime;
+    const [userTime, setUserTime] = React.useState(null);
+ 
     React.useEffect(() => {
-        console.log('User Hours: ' + userHours);
-        if (userHours >= 4 && userHours < 12) {
-            userTime = 'morning';
-            console.log('morning');
-        } else if (userHours >= 12 && userHours < 18) {
-            userTime = 'afternoon';
-            console.log('afternoon');
+        if (userHours >= 4 && userHours <= 12) {
+            setUserTime('morning');
+        } else if (userHours > 12 && userHours < 18) {
+            setUserTime('afternoon');
         } else {
-            userTime = 'night';
-            console.log('night');
+            setUserTime('night');
         }
-        console.log('User Time: ' + userTime);
-    }, []);
+    }, [userHours]);
 
     return (
         <span data-time={ userTime } className={`${styles.containerGradient} ${userTime}`}></span>
