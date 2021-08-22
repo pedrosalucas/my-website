@@ -8,7 +8,7 @@ function TopGradient() {
     let userTime;
     if (userHours >= 4 && userHours < 12) {
         userTime = 'morning';
-    } else if (userHours < 18) {
+    } else if (userHours >= 12 && userHours < 18) {
         userTime = 'afternoon';
     } else {
         userTime = 'night';
