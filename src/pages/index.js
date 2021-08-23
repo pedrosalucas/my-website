@@ -29,6 +29,22 @@ export default function Home() {
         <meta property="og:url" content="https://lucaspedrosa.vercel.app/" />
         <meta name="twitter:image:alt" content="Printscreen of the website." />
         <meta name="twitter:card" content="summary_large_image" />
+
+        <script async 
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_TRACKING_ID}`} />
+        
+        <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+            }}
+        />
       </Head>
 
       <div id="overlay-menu" className={styles.overlay}></div>

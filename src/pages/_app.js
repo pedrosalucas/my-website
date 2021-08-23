@@ -6,11 +6,11 @@ import { UserTimeZone } from '../providers/UserTimeZone';
 function MyApp({ Component, pageProps }) {
   return (
     <UserTimeZone>
-    <ThemePreference>
-      <LangPreference>
-        <Component {...pageProps} />
-      </LangPreference>
-    </ThemePreference>
+      <ThemePreference>
+        <LangPreference>
+          <Component {...pageProps} />
+        </LangPreference>
+      </ThemePreference>
     </UserTimeZone>
   );
 }
