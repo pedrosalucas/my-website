@@ -28,8 +28,11 @@
 }
 
 .main {
+  align-self: center;
+  
   section {
     padding: 12px 12vw 0;
+    max-width: 2500px;
     
     @media screen and (max-width: $tablet) {
       padding: 12px 5vw 0;

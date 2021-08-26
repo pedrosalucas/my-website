@@ -12,7 +12,7 @@ function ProjectItem({ textContent, Img, toolsImg }) {
                     {textContent.title}
                 </h2>
                 <p className={'contentText'}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor gravida eros eu cursus. Cras efficitur, ligula nec tempor tempus, erat nisl rutrum risus, eu hendrerit arcu tortor in purus.
+                    {textContent.description}
                 </p>
 
                 <h3>

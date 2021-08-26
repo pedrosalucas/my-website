@@ -27,11 +27,13 @@
         "list": [
             { 
                 "title": "Telegram Bot ➕ Discord Bot",
-                "status": "🚧 Developing 🚧"
+                "status": "🚧 Developing 🚧",
+                "description": "A bot to connect a Telegram group to a Discord text chat. The Bot takes messages from the Telegram group and sends them on the Discord chat and vice versa."
             },
             { 
                 "title": "My Website",
-                "status": ""
+                "status": "Done ✅",
+                "description": "I made this website to show information about me as a CV and improve my front-end skills."
             }
         ]
     }

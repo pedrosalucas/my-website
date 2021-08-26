@@ -52,4 +52,8 @@
     font-size: 90%;
     font-weight: bolder;
     user-select: none;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: -0.5%;
+    }
 }
