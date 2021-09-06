@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './index.module.scss';
 import Image from 'next/image';
+import SocialButton from '../SocialButton';
+import { FaGithub } from 'react-icons/fa';
 
-function ProjectItem({ textContent, Img, toolsImg }) {
+function ProjectItem({ textContent, Img, toolsImg, linkRepo }) {
 
 
     return (
@@ -21,6 +23,7 @@ function ProjectItem({ textContent, Img, toolsImg }) {
                         {textContent.status}
                     </spam>
                 </h3>
+
                 <div className={styles.projectTools}
                     style={{ display: toolsImg ? '' : 'none'}}
                 >
@@ -36,12 +39,19 @@ function ProjectItem({ textContent, Img, toolsImg }) {
                         }
                     </div>
                 </div>
-
             </div>
 
             <div  className={`contentText ${styles.projectImage}`}>
                 { Img ? <Image src={Img} placeholder="blur"  alt="Image Project" /> : '' }
             </div>
+
+            <SocialButton
+                href={linkRepo}
+                bgcolor="#161b22"
+                style={{ backgroundColor: "#161b22", width: "300px",marginTop: "35px", fontSize: "24px" }}
+            >
+                <FaGithub /> View the repository
+            </SocialButton>
         </div>
     )
 }
