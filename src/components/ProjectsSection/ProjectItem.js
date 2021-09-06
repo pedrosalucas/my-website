@@ -4,7 +4,7 @@ import Image from 'next/image';
 import SocialButton from '../SocialButton';
 import { FaGithub } from 'react-icons/fa';
 
-function ProjectItem({ textContent, Img, toolsImg, linkRepo }) {
+function ProjectItem({ textContent, Img, toolsImg, linkRepo, tilteRepo }) {
 
 
     return (
@@ -50,7 +50,7 @@ function ProjectItem({ textContent, Img, toolsImg, linkRepo }) {
                 bgcolor="#161b22"
                 style={{ backgroundColor: "#161b22", width: "300px",marginTop: "35px", fontSize: "24px" }}
             >
-                <FaGithub /> View the repository
+                <FaGithub /> { tilteRepo }
             </SocialButton>
         </div>
     )

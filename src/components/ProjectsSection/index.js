@@ -20,11 +20,13 @@ function ProjectsSection(props) {
 
         <ProjectItem textContent={messages.projects.list[0]}
           Img={DiagramBot} toolsImg={[NodeLogo, MongoLogo]}
-          linkRepo="https://github.com/pedrosalucas/discord-telegram-bot" />
+          linkRepo="https://github.com/pedrosalucas/discord-telegram-bot"
+          tilteRepo={ messages.projects.repositoryTitle } />
 
         <ProjectItem textContent={messages.projects.list[1]} Img={MySitePhoto}
           toolsImg={[SassLogo, VercelLogo, NextLogo, GALogo]}
-          linkRepo="https://github.com/pedrosalucas/my-website" />
+          linkRepo="https://github.com/pedrosalucas/my-website"
+          tilteRepo={ messages.projects.repositoryTitle } />
         
       </section>
   );

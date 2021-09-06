@@ -24,6 +24,7 @@
     },
     "projects": {
         "title": "Projetos",
+        "repositoryTitle": "Veja o repositório",
         "list": [
             {
                 "title": "Telegram Bot ➕ Discord Bot",
