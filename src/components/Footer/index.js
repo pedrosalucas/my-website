@@ -1,6 +1,9 @@
 import React from 'react';
+import { LangContext } from '../../providers/LangPreference';
 
 const Footer = (props) => {
+    const { messages } = React.useContext(LangContext);
+
     return (
         <footer {...props}>
             <h4 style={{display: 'flex', flexFlow: 'wrap-reverse', justifyContent: 'center'}}>
@@ -11,7 +14,7 @@ const Footer = (props) => {
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                 </span>
                 <span>
-                    Thank for your visit ❤️
+                { messages.footer } ❤️
                 </span>
             </h4>
         </footer>

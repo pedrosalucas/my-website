@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 
 function ToggleLang() {
-    const { messagesLang, setMessagesLang } = React.useContext(LangContext);
+    const { messages, messagesLang, setMessagesLang } = React.useContext(LangContext);
 
     const toggleClick = () => {
         if (messagesLang === 'en-us') {
@@ -16,7 +16,7 @@ function ToggleLang() {
 
     return (
         <div className={styles.firstContainer}>
-            <h4>Language:</h4>
+            <h4>{ messages.sidebar.language }:</h4>
             <div className={styles.toggleContainer}>
                 <label className={styles.switch}> 
                     <input type="checkbox" onClick={toggleClick} />

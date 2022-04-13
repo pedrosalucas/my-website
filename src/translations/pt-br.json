@@ -4,6 +4,12 @@
         "afternoon": "Boa Tarde",
         "evening": "Boa Noite"
     },
+    "sidebar": {
+        "theme": "Tema",
+        "language": "Idioma",
+        "socialMedia": "Redes Sociais"
+    },
+    "footer": "Obrigado pela sua visita",
     "resume": "Sou Lucas Pedrosa, tenho 20 anos, brasileiro, e estudo na Universidade Federal de Sergipe. Gosto de um ambiente de trabalho divertido, desde que todos sejam respeitados, e sou viciado em desafios, acredito que isso me motiva a ir além.",
     "experiences": {
         "title" : "Experiências",
@@ -20,20 +26,33 @@
                 "first": "Eu desenvolvo sites com Liquid Template, um Framework da Shopify, e faço suporte ao cliente.",
                 "second": "Aumentei minhas habilidades de comunicação fazendo suporte em inglês e português."
             }
+        },
+        "blu": {
+            "companyName": "Blu Pagaments S.A.",
+            "descriptions": {
+                "first": "Atuo como desenvolvedor Ruby on Rails na manutenção e desenvolvimento de novas features do sistema da empresa."
+            }
         }
     },
     "projects": {
         "title": "Projetos",
-        "repositoryTitle": "Veja o repositório",
+        "repositoryButton": "Veja o repositório",
+        "projectButton": "Abrir projeto",
         "list": [
             {
                 "title": "Telegram Bot ➕ Discord Bot",
                 "status": "🚧 Desenvolvimento 🚧",
                 "description": "Um bot para conectar um grupo do Telegram a um chat de texto do Discord. O Bot pega mensagens do grupo Telegram e as envia no bate-papo do Discord e vice-versa."
-            }, {
+            },
+            {
                 "title": "Meu Website",
                 "status": "Feito ✅",
                 "description": "Eu fiz este site para mostrar informações sobre mim como um currículo e melhorar minhas habilidades de front-end."
+            },
+            { 
+                "title": "Dogin 🐶",
+                "status": "🚧 Desenvolvimento 🚧",
+                "description": "Esse projeto vem de dois cursos, React e Redux. No curso React foi feita a maior parte do projeto, como as páginas, rotas, eventos e uso da API. E no curso Redux, o contexto dos estados foi refatorado para usar mecanismos Redux."
             }
         ]
     }

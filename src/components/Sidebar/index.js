@@ -1,4 +1,6 @@
-import styles from './index.module.scss'; 
+import React from 'react';
+import { LangContext } from '../../providers/LangPreference';
+import styles from './index.module.scss';
 import ToggleLang from '../ToggleLang';
 import ToggleTheme from '../ToggleTheme';
 import SocialButton from '../SocialButton';
@@ -6,6 +8,8 @@ import { FaInstagram, FaLinkedinIn, FaGithub, FaDiscord } from 'react-icons/fa';
 
 
 function Sidebar(props) {
+  const { messages } = React.useContext(LangContext);
+
     return (
       <div id="sidebar" {...props}>
         <div className={styles.sidebarContainer}>
@@ -14,7 +18,7 @@ function Sidebar(props) {
           <ToggleLang />
 
           <div className={styles.socialButtons}>
-            <h4>Social Medias:</h4>
+            <h4>{ messages.sidebar.socialMedia }:</h4>
 
             <div>
               <SocialButton

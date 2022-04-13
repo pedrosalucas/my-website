@@ -1,9 +1,11 @@
 import React from 'react';
+import { LangContext } from '../../providers/LangPreference';
 import { ThemeContext } from '../../providers/ThemePreference';
 import styles from './index.module.scss';
 
 
 function ToggleTheme() {
+    const { messages } = React.useContext(LangContext);
     const { currentTheme, setCurrentTheme } = React.useContext(ThemeContext);
 
     const toggleClick = () => {
@@ -16,7 +18,7 @@ function ToggleTheme() {
 
     return (
         <div className={styles.firstContainer}>
-            <h4>Theme:</h4>
+            <h4>{ messages.sidebar.theme }:</h4>
             <div className={styles.toggleContainer}>
                 <label className={styles.switch}> 
                     <input type="checkbox" onClick={toggleClick} />

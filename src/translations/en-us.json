@@ -4,27 +4,40 @@
         "afternoon": "Good Afternoon",
         "evening": "Good Evening"
     },
+    "sidebar": {
+        "theme": "Theme",
+        "language": "Language",
+        "socialMedia": "Social Medias"
+    },
+    "footer": "Thank for your visit",
     "resume": "I'm Lucas Pedrosa, 20 year old, Brazilian, and I study at the Federal University of Sergipe. I enjoy a fun work environment, as long as everyone is respected, and I'm addicted to challenges believe this motivates me to go further.",
     "experiences": {
         "title" : "Experiences",
         "softeam": {
             "companyName": "SofTeam",
             "descriptions": {
-                "first": "I worked developing websites using WordPress.",
-                "second": "There I developed soft skills such as being proactive and knowledge trade with coworkers."
+                "first": "SofTeam is a company organized by students at Universidade Federal de Sergipe.",
+                "second": "I worked developing websites using WordPress."
             }
         },
         "crably": {
             "companyName": "Crably",
             "descriptions": {
-                "first": "I develop websites with Liquid Template, a Shopify's Framework, and do customer support.",
-                "second": "I have increased my communication skills by doing support in English and Portuguese."
+                "first": "I worked developing websites using tools like Liquid, CSS, and JS.",
+                "second": "I also did support the clients in English and Portuguese."
+            }
+        },
+        "blu": {
+            "companyName": "Blu Payments S.A.",
+            "descriptions": {
+                "first": "I work developing in Ruby on Rails, maintaining and building new features to the company system."
             }
         }
     },
     "projects": {
         "title": "Projects",
-        "repositoryTitle": "View the repository",
+        "repositoryButton": "View the repository",
+        "projectButton": "Open the project",
         "list": [
             { 
                 "title": "Telegram Bot ➕ Discord Bot",
@@ -35,6 +48,11 @@
                 "title": "My Website",
                 "status": "Done ✅",
                 "description": "I made this website to show information about me as a CV and improve my front-end skills."
+            },
+            { 
+                "title": "Dogin",
+                "status": "🚧 Developing 🚧",
+                "description": "This project came from two courses, React and Redux courses. In React course was made the majority part of the project, like the pages, routes, events, and API usage. And in the Redux course, the context of the states was refactored to use Redux mechanisms."
             }
         ]
     }
