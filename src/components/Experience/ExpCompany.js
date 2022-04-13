@@ -15,8 +15,8 @@ function ExpCompany({ textContent, logo }) {
             </div>
             <div className={styles.companyDescription}>
               <ul>
-                <li>{textContent.descriptions.first}</li>
-                <li>{textContent.descriptions.second}</li>
+                {textContent.descriptions.first ? <li>{textContent.descriptions.first}</li> : ''}
+                {textContent.descriptions.second ? <li>{textContent.descriptions.second}</li> : ''}
               </ul>
             </div>
           </div>
